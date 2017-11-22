@@ -6,6 +6,8 @@
 </head>
 <body>
 <script>
+  // can't declare variables with the same name
+  // consts are immutable, unless objects - the properties are mutable  
   const key = 'abc123';
   let points = 50;
   let winner = false;
@@ -15,6 +17,7 @@
     age: 28
   }
 
+  // inhibits changing of properties
   const wes = Object.freeze(person);
 
 </script>
