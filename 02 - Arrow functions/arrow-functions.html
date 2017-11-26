@@ -6,6 +6,10 @@
 </head>
 <body>
 <script>
+  // Arrow functions:
+  // implicit return when not using curly brackets
+  // more concise
+  // doesn't rebind the value of 'this'
   const names = ['wes', 'kait', 'lux'];
 
   const fullNames = names.map(function(name) {
@@ -24,6 +28,7 @@
 
   const fullNames5 = names.map(() => `cool bos`);
 
+  // how to name arrow functions
   const sayMyName = (name) => {
     alert(`Hello ${name}!`)
   }
